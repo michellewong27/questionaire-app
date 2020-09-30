@@ -47,4 +47,26 @@ const quizData = [
     d: 'None of the above',
     correct: 'd'
   }
-]
+];
+
+const questionE1 = document.getElementById('question')
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+
+let currentQuiz = 0;
+
+//calls everytime you submit
+loadQuiz();
+
+function loadQuiz(){
+  const currentQuizData = quizData[currentQuiz];
+  questionE1.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
+
+  currentQuestion++;
+}

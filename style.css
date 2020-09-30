@@ -23,6 +23,10 @@ body {
   overflow: hidden;
 }
 
+h2 {
+  margin: 0;
+}
+
 .quiz-header {
   padding: 4rem;
 }
@@ -32,13 +36,23 @@ ul {
   padding: 0;
 }
 
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
 button {
   background-color: #8e44ad;
   display: block;
   color: white;
   font-family: inherit;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   width: 100%;
-  padding: 1rem;
+  padding: 1.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #732d91;
 }
